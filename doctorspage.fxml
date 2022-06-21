@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doctorspcontroller">
+   <children>
+      <HBox layoutX="1.0" prefHeight="33.0" prefWidth="818.0" style="-fx-background-color: lightblue;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="827.0" text="Doctors Examination Order Page" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+               <padding>
+                  <Insets left="140.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="-2.0" layoutY="33.0" prefHeight="397.0" prefWidth="818.0" AnchorPane.bottomAnchor="81.66666666666669" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="33.0">
+         <children>
+            <Label text="Date">
+               <padding>
+                  <Insets bottom="5.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dateTF" promptText="Date" />
+            <Label text="Patient ID">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="IdTF" promptText="Patient ID" />
+            <Label text="Patient Name">
+               <padding>
+                  <Insets bottom="5.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NameTF" promptText="Name">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <Label text="Age">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="AgeTF" promptText="Age" />
+            <Label text="Diagnosis">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DeagnosisTF" promptText="  Suspected result">
+               <padding>
+                  <Insets bottom="35.0" />
+               </padding>
+            </TextField>
+            <Label text="Lab Tests">
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="labtestTF" promptText="For examination" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="DBackBTN" layoutX="42.0" layoutY="469.0" mnemonicParsing="false" onAction="#Backtodocpage" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: lightblue;" text="Back" />
+      <Button fx:id="DSendBTN" layoutX="664.0" layoutY="469.0" mnemonicParsing="false" onAction="#sendtoAdmin" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: lightblue;" text="Send" />
+   </children>
+</AnchorPane>
