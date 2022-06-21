@@ -15,7 +15,9 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("entrypage.fxml"));
 
         Scene scene = new Scene(root);
+
         stage.setScene(scene);
+        stage.resizableProperty().setValue(false);
         stage.setTitle("Clinic Management");
         stage.show();
 
