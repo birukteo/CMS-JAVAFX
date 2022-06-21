@@ -72,6 +72,7 @@ public class searchrecController implements Initializable {
             Scene scene = new Scene(root);
             Stage stage = (Stage) backBTN.getScene().getWindow();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic rec Site ");
             stage.show();
         } catch (Exception e) {
@@ -124,31 +125,30 @@ public class searchrecController implements Initializable {
 
             tableviewrec.setItems(recserachObservableList);
 
-            // FilteredList<doctor> filtereddata = new
-            // FilteredList<>(doctorserachObservableListlist, b -> true);
-            // searchdoctextfield.textFormatterProperty().addListener((Observable, oldvalue,
-            // newvalue) -> {
-            // filtereddata.setPredicate(doctor -> {
-            // if (newvalue.isEmpty() || newvalue.isBlank() || newvalue == null) {
-            // return true;
+            FilteredList<receptionist> filtereddata = new FilteredList<>(recserachObservableList, b -> true);
+            searchrectextfield.textProperty().addListener((Observable, oldvalue,
+                    newvalue) -> {
+                filtereddata.setPredicate(receptionist -> {
+                    if (newvalue.isEmpty() || newvalue.isBlank() || newvalue == null) {
+                        return true;
 
-            // }
-            // String searchkeyword = newvalue.toLowerCase();
-            // if (doctor.getId().toLowerCase.indexOf(searchkeyword) > -1) {
-            // return true;
-            // } else if (doctor.getUsername().toLowerCase().indexOf(searchkeyword) > -1) {
-            // return true;
-            // } else
-            // return false;
-            // });
+                    }
+                    String searchkeyword = newvalue.toLowerCase();
+                    if (String.valueOf(receptionist.getId()).toLowerCase().indexOf(searchkeyword) > -1) {
+                        return true;
+                    } else if (receptionist.getUsername().toLowerCase().indexOf(searchkeyword) > -1) {
+                        return true;
+                    } else
+                        return false;
+                });
 
-            // });
+            });
 
-            // SortedList<doctor> sorteddata = new SortedList<>(filtereddata);
+            SortedList<receptionist> sorteddata = new SortedList<>(filtereddata);
 
-            // sorteddata.comparatorProperty().bind(tableviewdoc.comparatorProperty());
+            sorteddata.comparatorProperty().bind(tableviewrec.comparatorProperty());
 
-            // tableviewdoc.setItems(sorteddata);
+            tableviewrec.setItems(sorteddata);
         } catch (Exception e) {
             e.printStackTrace();
         }

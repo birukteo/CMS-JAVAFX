@@ -29,6 +29,7 @@ public class firstadminController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) backBTN.getScene().getWindow(); // new Stage();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic entry Site ");
             stage.show();
         } catch (Exception e) {
@@ -74,6 +75,7 @@ public class firstadminController {
             Stage stage = (Stage) patientBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("admin/patient");
             stage.show();
 
@@ -91,6 +93,7 @@ public class firstadminController {
             Stage stage = (Stage) doctorBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("admin/doctor");
             stage.show();
 

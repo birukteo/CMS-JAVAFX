@@ -57,6 +57,7 @@ public class admindoctorController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) backBTN.getScene().getWindow();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic entry Site ");
             stage.show();
         } catch (Exception e) {
@@ -73,6 +74,7 @@ public class admindoctorController {
             Stage stage = (Stage) adddoctorBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("adding and updating doctor");
             stage.show();
 
@@ -90,6 +92,7 @@ public class admindoctorController {
             Stage stage = (Stage) UpdatedoctorBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("adding and updating doctor");
             stage.show();
 
@@ -107,6 +110,7 @@ public class admindoctorController {
             Stage stage = (Stage) DeletedoctorBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("adding and updating doctor");
             stage.show();
 
@@ -124,6 +128,7 @@ public class admindoctorController {
             Stage stage = (Stage) SearchdoctorBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("adding and updating doctor");
             stage.show();
 

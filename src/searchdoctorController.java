@@ -71,6 +71,7 @@ public class searchdoctorController implements Initializable {
             Scene scene = new Scene(root);
             Stage stage = (Stage) backBTN.getScene().getWindow();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic entry Site ");
             stage.show();
         } catch (Exception e) {

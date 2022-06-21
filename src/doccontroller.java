@@ -94,6 +94,7 @@ public class doccontroller implements Initializable {
 
             Stage stage = (Stage) backBTN.getScene().getWindow(); // new Stage();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic entry Site ");
             stage.show();
         } catch (Exception e) {

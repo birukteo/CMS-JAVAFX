@@ -43,6 +43,7 @@ public class entrycontroller {
             Stage stage = (Stage) adminBTN.getScene().getWindow();
 
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic Admin Site ");
             stage.show();
 
@@ -59,6 +60,7 @@ public class entrycontroller {
             Scene scene = new Scene(root);
             Stage stage = (Stage) doctorBTN.getScene().getWindow();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic doctor Site ");
             stage.show();
 
@@ -75,6 +77,7 @@ public class entrycontroller {
             Scene scene = new Scene(root);
             Stage stage = (Stage) receptionistBTN.getScene().getWindow();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic receptionist Site ");
             stage.show();
 

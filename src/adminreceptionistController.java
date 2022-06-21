@@ -56,6 +56,7 @@ public class adminreceptionistController {
             Scene scene = new Scene(root);
             Stage stage = (Stage) backBTN.getScene().getWindow(); // new Stage();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic admin Site ");
             stage.show();
         } catch (Exception e) {
@@ -72,6 +73,7 @@ public class adminreceptionistController {
             Stage stage = (Stage) addrecBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("adding receptionist");
             stage.show();
 
@@ -89,6 +91,7 @@ public class adminreceptionistController {
             Stage stage = (Stage) addrecBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle(" updating receptionist");
             stage.show();
 
@@ -106,6 +109,7 @@ public class adminreceptionistController {
             Stage stage = (Stage) addrecBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("searching receptionist");
             stage.show();
 
@@ -123,6 +127,7 @@ public class adminreceptionistController {
             Stage stage = (Stage) addrecBTN.getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("deleting receptionist");
             stage.show();
 

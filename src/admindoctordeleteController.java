@@ -90,6 +90,7 @@ public class admindoctordeleteController implements Initializable {
             Scene scene = new Scene(root);
             Stage stage = (Stage) backBTN.getScene().getWindow(); // new Stage();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic entry Site ");
             stage.show();
         } catch (Exception e) {
@@ -189,35 +190,6 @@ public class admindoctordeleteController implements Initializable {
         tableviewdoc.setItems(list);
 
     }
-
-    // private void addrecord() {
-    // String query = "INSERT INTO doctor1 VALUES (" + IDTextField.getText()
-    // + ",'" + userNameTextField.getText()
-    // + "','" + passwordTextField.getText()
-    // + "','" + emailtextfield.getText()
-    // + "'," + phoneTextField.getText()
-    // + ",'" + bloodtypetextfield.getText()
-    // + "','" + specializationtextfield.getText() + "')";
-    // executeQuery(query);
-    // showdoctors();
-
-    // }
-
-    // private void updaterecord() {
-    // String query = " UPDATE doctor1 SET username = '" +
-    // userNameTextField.getText()
-    // + "',password='" + passwordTextField.getText()
-    // + "',email='" + emailtextfield.getText()
-    // + "',phone=" + phoneTextField.getText()
-    // + ",bloodtype='" + bloodtypetextfield.getText()
-    // + "',specialization= '" + specializationtextfield.getText() + "' WHERE id = "
-    // + IDTextField.getText()
-    // + "";
-
-    // executeQuery(query);
-    // showdoctors();
-
-    // }
 
     private void deleterecord() {
         String query = "DELETE FROM doctor1 WHERE id = " + IDTextField.getText() + "";

@@ -181,6 +181,7 @@ public class adminrecupdateController implements Initializable {
             Scene scene = new Scene(root);
             Stage stage = (Stage) backBTN.getScene().getWindow(); // new Stage();
             stage.setScene(scene);
+            stage.resizableProperty().setValue(false);
             stage.setTitle("Clinic rec Site ");
             stage.show();
         } catch (Exception e) {
@@ -203,14 +204,6 @@ public class adminrecupdateController implements Initializable {
         showreceptionist();
 
     }
-
-    // private void deleterecord() {
-    // String query = "DELETE FROM doctor1 WHERE id = " + IDTextField.getText() +
-    // "";
-    // executeQuery(query);
-    // showdoctors();
-
-    // }
 
     private void executeQuery(String query) {
         Connection conn = getConnection();
