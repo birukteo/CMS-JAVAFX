@@ -4,9 +4,9 @@
 
 ## 👉 Sample screenshots taken from the CM system
 
-<img src="images/main page.png" alt="Home - Screen" width="400"/><br>
+<img src="images/main page.PNG" alt="Entrypage - Screen" width="400"/><br>
 
-<img src="images/loginpage.png" alt="Playing - Screen" width="400"/><br>
+<img src="images/loginpage.PNG" alt="loginpage - Screen" width="400"/><br>
 
 
 
