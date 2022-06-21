@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="receptionistlogincontroller">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="200.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="5.0" layoutY="53.0" prefHeight="17.0" prefWidth="204.0" text="BBB" textFill="#f4eeee">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="3.0" layoutY="95.0" prefHeight="17.0" prefWidth="204.0" text="Medical Center" textFill="#fdf5f5">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="79.33334350585938" layoutX="109.0" layoutY="88.0" startX="-83.33334350585938" />
+            <Circle fill="DODGERBLUE" layoutX="43.0" layoutY="43.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label alignment="TOP_CENTER" layoutX="2.0" layoutY="307.0" prefHeight="17.0" prefWidth="204.0" text="Health for All!!" textFill="#fdf5f5">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Circle fill="DODGERBLUE" layoutX="161.0" layoutY="43.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../wku%20files/3rd%202nd/ADV%20JAVA/java%20fx%20vs%20code/login%20images/doctorlogin.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="6.0" layoutY="369.0" text="Receptionist login" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="322.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="25.0" layoutY="141.0" text="user name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="183.0" text="password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernametextfield" layoutX="105.0" layoutY="136.0" promptText="username here" />
+            <PasswordField fx:id="passwordtextfield" layoutX="104.0" layoutY="183.0" promptText="password here" />
+            <Button fx:id="loginbutton" layoutX="35.0" layoutY="285.0" mnemonicParsing="false" onAction="#loginbuttononaction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: black;" text="Login" textFill="#efeeee">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="canclebutton" layoutX="168.0" layoutY="285.0" mnemonicParsing="false" onAction="#canclebuttononaction" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: black;" text="cancel" textFill="#f6f1f1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginmessagelabel" alignment="TOP_CENTER" layoutX="16.0" layoutY="108.0" prefHeight="7.0" prefWidth="275.0" textFill="#ed1212">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="76.0" fitWidth="84.0" layoutX="125.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../wku%20files/3rd%202nd/ADV%20JAVA/java%20fx%20vs%20code/login%20images/keylogin.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBTN" layoutX="14.0" layoutY="360.0" mnemonicParsing="false" onAction="#backbtnActionHandler" prefHeight="25.0" prefWidth="99.0" text="      Back" />
+            <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="16.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/back%20btn.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
