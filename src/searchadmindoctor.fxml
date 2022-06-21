@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="searchdoctorController">
+   <children>
+      <TableView fx:id="tableviewdoc" layoutY="53.0" onMouseClicked="#handlemouseaction" prefHeight="356.0" prefWidth="621.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="54.0" text="ID" />
+            <TableColumn fx:id="colusername" prefWidth="107.33332824707031" text="username" />
+            <TableColumn fx:id="colpassword" prefWidth="80.6666259765625" text="password" />
+            <TableColumn fx:id="colemail" prefWidth="105.3333740234375" text="email" />
+            <TableColumn fx:id="colphoneno" prefWidth="72.66665649414062" text="phone no" />
+            <TableColumn fx:id="colbloodtype" prefWidth="96.0" text="blood type" />
+            <TableColumn fx:id="colspecialization" prefWidth="103.33333333333337" text="specialization" />
+         </columns>
+      </TableView>
+      <HBox layoutY="9.0" prefHeight="43.0" prefWidth="621.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="107.0" text="Search doctor">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchdoctextfield" prefHeight="25.0" prefWidth="514.0" />
+         </children>
+      </HBox>
+      <HBox layoutY="437.0" prefHeight="43.0" prefWidth="200.0" />
+      <Button fx:id="backBTN" layoutX="22.0" layoutY="423.0" mnemonicParsing="false" onAction="#backbtnActionHandler" prefHeight="25.0" prefWidth="99.0" text="      Back" />
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="22.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/back%20btn.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

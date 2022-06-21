@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admindoctorController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="97.0" prefWidth="599.0" style="-fx-background-color: blue;" text="                         ADMIN/DOCTOR SITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="adddoctorBTN" layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#adddoctorActionHandler" style="-fx-background-color: green;" text="Add New Doctor" />
+      <Button fx:id="UpdatedoctorBTN" layoutX="220.0" layoutY="200.0" mnemonicParsing="false" onAction="#UpdatedoctorActionHandler" style="-fx-background-color: yellow;" text="Update Doctor Information" />
+      <Button fx:id="DeletedoctorBTN" layoutX="461.0" layoutY="200.0" mnemonicParsing="false" onAction="#DeletedoctorActionHandler" style="-fx-background-color: red;" text="Delete Doctor" />
+      <Button fx:id="SearchdoctorBTN" layoutX="15.0" layoutY="335.0" mnemonicParsing="false" onAction="#SearchdoctorActionHandler" text="Search Doctors" />
+      <ImageView fitHeight="77.0" fitWidth="101.0" layoutX="25.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../addpatienticon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="122.0" layoutX="239.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/update%20doc.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="77.0" fitWidth="101.0" layoutX="459.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/deletepatienticon.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="101.0" layoutX="25.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/searchpatienticon.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backBTN" mnemonicParsing="false" onAction="#backbtnActionHandler" prefHeight="25.0" prefWidth="99.0" text="      Back" />
+      <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="6.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/back%20btn.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

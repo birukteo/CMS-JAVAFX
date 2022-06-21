@@ -1,0 +1,16 @@
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx.base.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx.controls.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx.fxml.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx.graphics.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx.media.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx.swing.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx.web.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\javafx-sdk-17.0.2\\lib\\javafx-swt.jar",
+    "c:\\Users\\Win 10 Pro\\Desktop\\mysql-connector-java-8.0.28\\mysql-connector-java-8.0.28.jar"
+  ]
+}
